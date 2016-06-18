@@ -1,0 +1,38 @@
+apply plugin: 'java'
+
+//设置utf-8编码
+tasks.withType(JavaCompile) {
+	options.encoding = "UTF-8"
+}
+//指定java编译器版本
+sourceCompatibility=1.8
+targetCompatibility=1.8
+
+ javadoc{
+	 source = sourceSets.main.allJava
+	 options.encoding = "UTF-8"
+	 options.charSet = "UTF-8"
+	 options.author = "true"
+	 options.showAll()
+  }
+  
+sourceSets{
+    main{
+        java{
+        }
+    }
+}    
+ 
+repositories {
+    mavenCentral()
+    // 自定义库地址
+    //maven { url 'http://localhost:8081/nexus/content/groups/public' } 
+    //eleven：url那里有的用双引号。
+    
+}
+
+dependencies {
+    compile 'log4j:log4j:1.2.17'
+    testCompile 'junit:junit:4.11'
+}
+ 

@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Recursive",
+            "request": "launch",
+            "mainClass": "algo.recursive.Recursive",
+            "projectName": "algo.java"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Recursive",
+            "request": "launch",
+            "mainClass": "algo.Recursive.Recursive",
+            "projectName": "algo.java"
+        }
+    ]
+}
